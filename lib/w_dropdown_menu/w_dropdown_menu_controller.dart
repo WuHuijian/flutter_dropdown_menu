@@ -15,7 +15,7 @@ class HJDropDownMenuController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void hide(bool notify){
+  void hide(){
     isShow=false;
     notifyListeners();
 

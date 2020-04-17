@@ -190,7 +190,7 @@ class _HJDropDownDemoPageState extends State<HJDropDownDemoPage> {
             dropDownWidget:
                 _buildConditionListWidget(_brandSortConditions, (value) {
               _selectBrandSortCondition = value;
-              _dropdownMenuController.hide(true);
+              _dropdownMenuController.hide();
               setState(() {});
             })),
         HJDropDownMenuBuilder(
@@ -198,7 +198,7 @@ class _HJDropDownDemoPageState extends State<HJDropDownDemoPage> {
             dropDownWidget:
                 _buildConditionListWidget(_priceSortConditions, (value) {
               _selectPriceSortCondition = value;
-              _dropdownMenuController.hide(true);
+              _dropdownMenuController.hide();
               setState(() {});
             })),
       ],

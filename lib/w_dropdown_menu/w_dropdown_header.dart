@@ -120,11 +120,11 @@ class _HJDropDownHeaderState extends State<HJDropDownHeader>
         widget.controller.dropDownHearderHeight = size.height + position.dy;
 
         if (widget.controller.isShow && index == menuIndex) {
-          widget.controller.hide(true);
+          widget.controller.hide();
         } else if (widget.controller.isShow && index != menuIndex) {
           HJDropDownHeaderItem item = widget.items[index];
           if(!item.canDrop){
-            widget.controller.hide(item.canDrop);
+            widget.controller.hide();
           }
           widget.controller.show(index, item.canDrop);
         } else {

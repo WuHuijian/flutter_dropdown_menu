@@ -117,7 +117,7 @@ Widget _mask() {
   if (_isShowMask) {
     return GestureDetector(
       onTap: () {
-        widget.controller.hide(true);
+        widget.controller.hide();
       },
       child: Container(
         width: MediaQuery
